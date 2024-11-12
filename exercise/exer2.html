@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Second React Code</title>
+    <!-- Include React and ReactDOM libraries -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</head>
+
+<body>
+    <!-- Placeholder for React to render into -->
+    <div id="brand"></div>
+
+    <script>
+        class Car {
+            constructor(Name) {
+                this.brand = Name;
+            }
+        }
+
+        // Create an instance of Car
+        const myCar = new Car('Toyota');
+
+        // Render using React
+        const root = ReactDOM.createRoot(document.getElementById('brand'));
+        root.render(React.createElement('h1', null, `Car brand: ${myCar.brand}`));
+    </script>
+</body>
+
+</html>
