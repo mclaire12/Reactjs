@@ -1,10 +1,11 @@
-import React from "react";
-import ReactDOM, { createRoot } from 'react-dom/client';
-function App(){
-  return <h1>Hello</h1>
-}
-const Container = document.getElementById("root");
-const root = ReactDOM.createRoot(Container);
-root.render(<App/>)
+import React from 'react';
+
+const App = () => (
+  <>
+  <p><label>User Name</label><input type="text" placeholder="Enter your UserName"/></p>
+  <p><label>Password</label><input type="password" placeholder="Enter your password"/></p>
+  <button>Login</button>
+  </>
+);
 
 export default App;
